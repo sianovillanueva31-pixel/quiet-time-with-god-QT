@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Quiet Time with God</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+<h1>🌿 A Quiet Time with God</h1>
+
+<div id="loginBox">
+<input id="username" placeholder="Enter your name">
+<button onclick="start()">Start</button>
+</div>
+
+<div id="app" style="display:none;">
+<h2 id="welcome"></h2>
+
+<input id="title" placeholder="Title">
+<textarea id="entry" placeholder="Reflection..."></textarea>
+<textarea id="prayer" placeholder="Prayer..."></textarea>
+
+<button onclick="saveEntry()">Save Entry</button>
+<button onclick="downloadPDF()">Download PDF</button>
+
+<h2>Your Entries</h2>
+<div id="entries"></div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
